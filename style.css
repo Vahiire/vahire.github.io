@@ -1,0 +1,37 @@
+/* Pages publiques demandées par Google (accueil + confidentialité). Aucune dépendance externe. */
+:root {
+  color-scheme: light;
+  --velin: #F2ECE0;
+  --feuillage: #2E3A2B;
+  --feuillage-doux: #5A6353;
+  --rose-texte: #8E5A4B;
+  --garance: #9C3A22;
+  --trait: rgb(46 58 43 / .2);
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--velin); }
+body {
+  color: var(--feuillage);
+  font: 400 17px/1.6 "Avenir Next", "Segoe UI", system-ui, sans-serif;
+  padding: 48px 20px 64px;
+}
+main { max-width: 640px; }
+h1 {
+  margin: 0 0 6px;
+  font: 400 clamp(40px, 11vw, 64px)/1 "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  letter-spacing: -.015em;
+}
+h1 em { font-style: italic; color: var(--garance); }
+h2 {
+  margin: 36px 0 8px; padding-top: 18px;
+  border-top: 1px solid var(--trait);
+  font: 400 24px/1.2 "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+}
+.chapo { margin: 14px 0 0; color: var(--feuillage-doux); font-size: 18px; }
+.maj { margin: 28px 0 0; font-size: 14px; color: var(--feuillage-doux); }
+a { color: var(--garance); text-underline-offset: 3px; }
+a:focus-visible { outline: 2px solid var(--garance); outline-offset: 2px; }
+ul { padding-left: 1.2em; }
+li { margin: 4px 0; }
+nav { margin-top: 40px; font-size: 15px; }
+@media (min-width: 760px) { body { padding: 72px 96px; } }

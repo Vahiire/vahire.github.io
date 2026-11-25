@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Confidentialité · Queen Night</title>
+<meta name="description" content="Règles de confidentialité de l’application privée Queen Night.">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <h1>Confidentialité</h1>
+  <p class="chapo">Queen Night est une application privée, utilisée par un seul foyer. Voici exactement ce qu’elle fait des données.</p>
+
+  <h2>Données saisies dans le formulaire</h2>
+  <p>La date, l’heure, les choix (repas, dessert, activité, boisson, massage) et le petit mot facultatif. Ces réponses servent uniquement à créer un événement dans le Google Agenda du propriétaire de l’application. Elles ne sont pas enregistrées ailleurs : le serveur ne tient ni base de données ni historique, et ne dépose qu’un cookie technique mémorisant que le code d’accès a été saisi.</p>
+
+  <h2>Données Google</h2>
+  <p>L’application utilise les API Google avec les autorisations suivantes, accordées une seule fois par le propriétaire de l’application sur son propre compte :</p>
+  <ul>
+    <li><code>calendar.events</code> : créer l’événement de la soirée dans son agenda, et éventuellement y inviter une adresse choisie par lui ;</li>
+    <li><code>gmail.send</code> (facultatif) : s’envoyer à lui-même un e-mail de notification.</li>
+  </ul>
+  <p>L’application ne lit ni les autres événements de l’agenda, ni les e-mails. Le seul élément conservé est le jeton d’autorisation Google, stocké sur un serveur personnel non public, pour pouvoir créer les événements suivants. Il peut être révoqué à tout moment depuis <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</p>
+
+  <h2>Partage</h2>
+  <p>Aucune donnée n’est vendue, partagée, transférée à des tiers ni utilisée à des fins publicitaires ou d’entraînement de modèles. Les seuls services contactés sont Google (agenda, et e-mail si activé) et, si elle est activée, une notification push privée envoyée au propriétaire.</p>
+  <p>L’utilisation et le transfert des informations reçues des API Google respectent les <a href="https://developers.google.com/terms/api-services-user-data-policy">règles relatives aux données utilisateur des services d’API Google</a>, y compris les exigences d’utilisation limitée (<i lang="en">Limited Use</i>).</p>
+
+  <h2>Contact</h2>
+  <p>Pour toute question, écrire à l’adresse de contact affichée sur l’écran d’autorisation Google de l’application.</p>
+
+  <p class="maj">Dernière mise à jour : 25 novembre 2026.</p>
+  <nav><a href="index.html">Retour à l’accueil</a></nav>
+</main>
+</body>
+</html>
